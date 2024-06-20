@@ -91,7 +91,7 @@
             <div class="row g-3 align-items-center">
               <div class="col-md-12">
                   <label for="inputPassword6"  class="required">Email</label>
-                  <input type="text" id="disabledTextInput" class="form-control" placeholder="Enter Email"required>
+                  <input type="email" id="disabledTextInput" class="form-control" placeholder="Enter Email"required>
                 </div>
             </div>
             <div class="row g-3 align-items-center">
@@ -143,11 +143,15 @@
             <div class="row g-3 align-items-center">
               <div class="col-md-6">
                 <label for="inputPassword6"  class="required">gender</label>
-                <input type="text" id="disabledTextInput" class="form-control" placeholder="Enter Username"  required>
+                <select class="form-select" id="sex" require>
+                  <option value="1">--choose--</option>
+                  <option value="1">F</option>
+                  <option value="2">M</option>
+                </select>
               </div>
               <div class="col-md-6">
-                  <label for="inputPassword6"  class="required">Tell</label>
-                  <input type="tel" id="disabledTextInput" class="form-control" placeholder="123-456-7890" required>
+                  <label for="inputPassword6"  class="required">Tel</label>
+                  <input type="tel" id="disabledTextInput" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" value="12" required>
                   <span id="passwordHelpInline" class="form-text">
                       Format: 123-456-7890
                     </span>
